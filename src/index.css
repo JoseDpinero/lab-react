@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.submit-button{
+    @apply  bg-blue-500 text-white px-4 py-2 rounded 
+}
+.submit-button:hover{
+    @apply bg-blue-600
+}
+.input{
+   @apply border border-gray-300 py-2 px-3 text-gray-700 
+}
+.input:focus{
+    @apply shadow-orange-50
+}
+.login-card{
+    @apply bg-white shadow-lg max-w-lg 
+}
+@screen md{
+    .login-card{
+        @apply flex 
+    }
+}
+.nav{
+    @apply text-white
+    
+}
+.nav-active{
+    @apply text-purple-200
 }
