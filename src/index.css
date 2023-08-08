@@ -26,9 +26,9 @@
     @apply  border-gray-200 bg-gray-900 flex justify-center py-2
 }
 .nav{
-    @apply text-white
+    @apply text-green-600 font-bold
     
 }
 .nav-active{
-    @apply text-purple-200 underline
+    @apply text-green-500 underline
 }
