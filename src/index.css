@@ -2,33 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-.submit-button{
-    @apply  bg-blue-500 text-white px-4 py-2 rounded 
+.submit-button {
+  @apply bg-blue-500 text-white px-4 py-2 rounded;
 }
-.submit-button:hover{
-    @apply bg-blue-600
+.submit-button:hover {
+  @apply bg-blue-600;
 }
-.input{
-   @apply border border-gray-300 py-2 px-3 text-gray-700 
+.input {
+  @apply border border-gray-300 py-2 px-3 text-gray-700;
 }
-.input:focus{
-    @apply shadow-orange-50
+.input:focus {
+  @apply shadow-orange-50;
 }
-.login-card{
-    @apply bg-white shadow-lg max-w-lg 
+.login-card {
+  @apply bg-white shadow-lg max-w-lg;
 }
-@screen md{
-    .login-card{
-        @apply flex 
-    }
+
+.navBar {
+  @apply bg-gray-900 flex flex-row-reverse justify-normal;
 }
-.navBar{
-    @apply  border-gray-200 bg-gray-900 flex justify-center py-2
+.nav {
+  @apply text-green-500 font-bold;
 }
-.nav{
-    @apply text-green-600 font-bold
-    
+.nav.active {
+  @apply text-green-600 underline;
 }
-.nav-active{
-    @apply text-green-500 underline
+
+/*min-width 768 px*/
+@screen md {
+  .login-card {
+    @apply flex;
+  }
+}
+/* small screens 640px */
+@screen sm {
+  .nav_container {
+  }
+  .navBar {
+    @apply justify-center py-2;
+  }
 }
