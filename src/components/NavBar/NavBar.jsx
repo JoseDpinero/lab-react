@@ -7,14 +7,16 @@ export default function NavBar() {
   return (
     <nav className="navBar">
       <button
-        className="text-yellow-800 uppercase gap-3 sm:hidden"
+        className="text-yellow-800 uppercase gap-3 self-end sm:hidden"
         onClick={() => setShow(!show)}
       >
         Button
       </button>
-      <div className="nav__container sm:flex">
+      <div className="nav__container self-center">
         <ul
-          className={`list-none flex gap-2 sm:flex ${show ? 'flex' : 'hidden'}`}
+          className={`list-none gap-2 sm:flex ${
+            !show ? 'hidden' : 'items-center  '
+          }`}
         >
           <li>
             <NavLink className="nav" to="/">
